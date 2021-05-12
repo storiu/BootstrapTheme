@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>6CD54D92-B023-4CA7-BD19-2A1767C633B0</title>
+    <g id="Marketplace-(Quick-order)--v1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Marketplace/orderPreview" transform="translate(-965.000000, -847.000000)" stroke="#E86262">
+            <g id="Group" transform="translate(966.000000, 847.000000)">
+                <path d="M9.5,0.5 C9.91421356,0.5 10.2892136,0.667893219 10.5606602,0.939339828 C10.8321068,1.21078644 11,1.58578644 11,2 L11,2 L11,3.5 L5,3.5 L5,2 C5,1.58578644 5.16789322,1.21078644 5.43933983,0.939339828 C5.71078644,0.667893219 6.08578644,0.5 6.5,0.5 L6.5,0.5 Z" id="Rectangle"></path>
+                <path d="M14,3.5 L14,16 C14,16.6903559 13.720178,17.3153559 13.267767,17.767767 C12.8153559,18.220178 12.1903559,18.5 11.5,18.5 L11.5,18.5 L4.5,18.5 C3.80964406,18.5 3.18464406,18.220178 2.73223305,17.767767 C2.27982203,17.3153559 2,16.6903559 2,16 L2,16 L2,3.5 L14,3.5 Z" id="Rectangle"></path>
+                <line x1="0" y1="3.5" x2="16" y2="3.5" id="Line-2" stroke-linecap="round"></line>
+                <line x1="5" y1="7.5" x2="5" y2="13.5" id="Line-3" stroke-linecap="round"></line>
+                <line x1="8" y1="7.5" x2="8" y2="13.5" id="Line-3" stroke-linecap="round"></line>
+                <line x1="11" y1="7.5" x2="11" y2="13.5" id="Line-3" stroke-linecap="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

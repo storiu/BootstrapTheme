@@ -1,0 +1,8 @@
+<form [formGroup]="form">
+  <ng-container formGroupName="user">
+    <archincer-text-input id="{{prefix}}_firstName" label="First name" formControlName="firstName"></archincer-text-input>
+    <archincer-text-input id="{{prefix}}_lastName" label="Last name" formControlName="lastName"></archincer-text-input>
+    <archincer-text-input id="{{prefix}}_email" type="email" label="Email address" formControlName="email"></archincer-text-input>
+    <archincer-phone-number-input id="{{prefix}}_phone" label="Phone Number" placeholder="" formControlName="phone"></archincer-phone-number-input>
+  </ng-container>
+</form>

@@ -1,0 +1,13 @@
+<div class="image-renderer" [style.padding-bottom.%]="height">
+  <div>
+    <img *ngIf="src" defaultImage="assets/images/placeholder.png" [lazyLoad]="src" [alt]="alt" [style.object-fit]="objectFit" loading="lazy">
+    <div class="overlay" *ngIf="!readonly">
+      <archincer-icon icon="close" color="white" class="cursor-pointer" (click)="delete.emit()"></archincer-icon>
+    </div>
+    <div class="overlay" *ngIf="hasPreview">
+      <div class="d-flex justify-content-center align-items-center">
+        <img class="cursor-pointer" src="assets/images/icons/link-external-light.svg" alt="Preview" (click)="preview()">
+      </div>
+    </div>
+  </div>
+</div>

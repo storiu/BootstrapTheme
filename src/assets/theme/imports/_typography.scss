@@ -1,0 +1,38 @@
+div, p, a, span {
+  font-size: 15px;
+}
+
+a {
+  color: inherit;
+}
+
+@for $i from 5 through 90 {
+  .font-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+@for $i from 1 through 20 {
+  .multi-line-text-overflow-#{$i} {
+    display: -webkit-box;
+    -webkit-line-clamp: #{$i};
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.text-overflow {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.line-height-1 {
+  line-height: 1;
+}

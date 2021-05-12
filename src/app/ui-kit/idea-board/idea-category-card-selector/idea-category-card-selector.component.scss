@@ -1,0 +1,26 @@
+@import "../../../../assets/theme";
+
+.category-card {
+  @include flex(width, 152px);
+  @include flex(height, 152px);
+  border-radius: 4px 4px 5px 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px -1px rgba(0,0,0,0.1);
+  margin-right: 18px;
+  background-color: white;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  span {
+    color: $cape-cod;
+  }
+
+  &.selected {
+    background-color: $niagara;
+    span {
+      color: white;
+    }
+  }
+}

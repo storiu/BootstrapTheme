@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="199px" viewBox="0 0 1440 199" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>dark-white</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dark-white">
+            <path d="M1440,0 L1440,1.68244075 L0,199 L0,0 L1440,0 Z" id="bottomDiagonal-darkBlue" fill="#0A2540"></path>
+            <path d="M1440,0 L1440,199 L0,199 L0,197.229983 L1440,0 Z" id="topDiagonal-white" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

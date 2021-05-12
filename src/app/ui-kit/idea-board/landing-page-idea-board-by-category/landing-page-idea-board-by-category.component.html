@@ -1,0 +1,7 @@
+<div class="container">
+  <archincer-tabset [tabs]="ideaBoardCategories" (selectedChange)="categoryChanged($event)"></archincer-tabset>
+</div>
+
+<div class="mt-45 position-relative">
+  <archincer-home-page-idea-board [ideas]="ideas" [isLoading]="isLoading"></archincer-home-page-idea-board>
+</div>

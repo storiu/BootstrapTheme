@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="254px" height="282px" viewBox="0 0 254 282" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>7832785C-0DC2-4D2E-BA4E-989825CAB29F</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="53.1775841%" y2="51.9118089%" id="linearGradient-1">
+            <stop stop-color="#07A39D" offset="0%"></stop>
+            <stop stop-color="#07A39D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Contact-Us" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.249860491">
+        <g id="ContactUs" transform="translate(0.000000, -96.000000)" fill="url(#linearGradient-1)">
+            <path d="M87.5,96 C179.455411,96 254,170.544589 254,262.5 C254,354.455411 179.455411,429 87.5,429 C-4.45541084,429 -79,354.455411 -79,262.5 C-79,170.544589 -4.45541084,96 87.5,96 Z M86.7928932,181.5 C42.0578285,181.5 5.79289322,217.764935 5.79289322,262.5 C5.79289322,307.235065 42.0578285,343.5 86.7928932,343.5 C131.527958,343.5 167.792893,307.235065 167.792893,262.5 C167.792893,217.764935 131.527958,181.5 86.7928932,181.5 Z" id="Combined-Shape" transform="translate(87.500000, 262.500000) rotate(-315.000000) translate(-87.500000, -262.500000) "></path>
+        </g>
+    </g>
+</svg>

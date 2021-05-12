@@ -1,0 +1,32 @@
+@import "../../../../assets/theme";
+@import "../../../../assets/theme/imports/swiper";
+
+.dot-shape {
+  top: -50px;
+  right: 0;
+}
+
+.box-shadow {
+  left: 0;
+  width: 10px;
+  height: 90%;
+  top: 5%;
+  border-radius: 10px 0 0 10px;
+  background: $swans-down;
+}
+
+@include carousel_area(48%, unset, 0, 100px, unset, true);
+
+swiper::ng-deep {
+  & > .swiper.s-wrapper .swiper-button-prev  {
+    color: $niagara !important;
+  }
+
+  & > .swiper.s-wrapper .swiper-button-next {
+    color: $niagara !important;
+  }
+
+  & > .swiper.s-wrapper .swiper-pagination .swiper-pagination-handle .swiper-pagination-bullet {
+    background-color: $niagara !important;
+  }
+}

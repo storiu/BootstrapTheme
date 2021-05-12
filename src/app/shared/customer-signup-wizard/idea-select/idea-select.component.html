@@ -1,0 +1,8 @@
+<form [formGroup]="filterForm">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-3">
+      <archincer-select placeholder="Services" [options]="availableProjectAccessoryTypes" formControlName="projectType"></archincer-select>
+    </div>
+  </div>
+</form>
+<archincer-idea-board [ideas]="ideas" [clickable]="true" [selectable]="true"></archincer-idea-board>

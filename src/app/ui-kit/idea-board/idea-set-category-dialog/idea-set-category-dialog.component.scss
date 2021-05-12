@@ -1,0 +1,24 @@
+@import "../../../../assets/theme";
+
+archincer-image-renderer {
+  display: block;
+  @include flex(width, 136px);
+}
+
+form {
+  &::ng-deep {
+    .form-group {
+      background-color: $catskill-white;
+      input, select {
+        &.form-control {
+          background-color: $catskill-white;
+        }
+      }
+    }
+  }
+  archincer-multi-select::ng-deep {
+    .form-group {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../../assets/theme";
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: $gray-chateau;
+  height: 48px;
+  &.btn-primary {
+    color: white;
+  }
+}

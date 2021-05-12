@@ -1,0 +1,6 @@
+<a class="close" mat-dialog-close><span class="material-icons">close</span></a>
+<div [innerHTML]="title | safeHtml"></div>
+<div [innerHTML]="content | safeHtml"></div>
+<div class="d-flex justify-content-center" mat-dialog-actions>
+  <button class="btn btn-normal btn-warning" mat-dialog-close>Ok</button>
+</div>

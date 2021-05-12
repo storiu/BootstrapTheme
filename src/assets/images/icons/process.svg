@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="36px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/process</title>
+    <g id="Partners" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Partners/updated" transform="translate(-543.000000, -1791.000000)">
+            <g id="Group-17" transform="translate(543.000000, 1792.000000)">
+                <rect id="Rectangle" fill="#DBEEED" x="11.2903226" y="7.90322581" width="31.6129032" height="27.0967742" rx="2"></rect>
+                <g id="Group-16" transform="translate(0.000000, -0.000000)">
+                    <rect id="Rectangle" stroke="#07A39D" stroke-width="2" x="1" y="11.5376344" width="7.78494624" height="7.78494624" rx="2"></rect>
+                    <rect id="Rectangle" stroke="#07A39D" stroke-width="2" x="15.3010753" y="11.5376344" width="7.78494624" height="7.78494624" rx="2"></rect>
+                    <rect id="Rectangle" stroke="#07A39D" stroke-width="2" fill="#07A39D" x="29.6021505" y="11.5376344" width="7.78494624" height="7.78494624" rx="2"></rect>
+                    <polyline id="Path-4" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="31.6129032 15.5538821 32.8202526 16.7612315 35.5545535 13.5483871"></polyline>
+                    <path d="M4.89247312,6.91532258 C4.89247312,3.09609538 7.9885685,7.01580655e-16 11.8077957,0 L12.2782258,0 C16.097453,1.86597765e-16 19.1935484,3.09609538 19.1935484,6.91532258 L19.1935484,6.91532258 L19.1935484,6.91532258" id="Path-5" stroke="#07A39D" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M19.5698925,31.0645581 C19.5698925,27.2453309 22.6659879,24.1492356 26.4852151,24.1492356 L26.9556452,24.1492356 C30.7748724,24.1492356 33.8709677,27.2453309 33.8709677,31.0645581 L33.8709677,31.0645581 L33.8709677,31.0645581" id="Path-5" stroke="#07A39D" stroke-width="2" stroke-linecap="round" transform="translate(26.720430, 27.606897) rotate(-180.000000) translate(-26.720430, -27.606897) "></path>
+                    <circle id="Oval" fill="#07A39D" cx="19.5698925" cy="6.97853663" r="2.25806452"></circle>
+                    <circle id="Oval" fill="#07A39D" transform="translate(33.870968, 24.086022) rotate(-180.000000) translate(-33.870968, -24.086022) " cx="33.8709677" cy="24.0860215" r="2.25806452"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

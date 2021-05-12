@@ -1,0 +1,10 @@
+<section [ngClass]="sectionClass ? sectionClass : 'pt-50'" [class.pb-50]="hasBottomPadding" [class.bg-color-catskill-white]="!isWhite">
+  <div class="container">
+    <p class="text-primary mb-2 font-22" [ngClass]="'text-' + align" *ngIf="header">{{ header }}</p>
+    <h2 class="font-24 color-downriver mb-20" [ngClass]="titleClass ? titleClass : 'mb-40' + ' text-' + align" *ngIf="title">{{ title }}</h2>
+    <p class="color-dove-gray text-center mb-50 px-0 px-xl-150" *ngIf="description">{{ description }}</p>
+  </div>
+  <div [class.container]="container">
+    <ng-content></ng-content>
+  </div>
+</section>

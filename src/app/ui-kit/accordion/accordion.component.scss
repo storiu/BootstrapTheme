@@ -1,0 +1,25 @@
+section {
+  .title {
+    width: calc(100% - 35px);
+  }
+
+  .icon {
+    top: 15px;
+    right: 15px;
+  }
+
+  .description {
+    max-height: 500px;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  .content-open {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+  }
+
+  border-radius: 6px;
+  box-shadow: 1px 1px 12px 0 rgba(156,166,177,0.2);
+}

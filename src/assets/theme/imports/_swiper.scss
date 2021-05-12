@@ -1,0 +1,60 @@
+swiper > .swiper.s-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+swiper > .swiper.s-wrapper .swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 10px;
+}
+
+swiper > .swiper.s-wrapper .swiper-button-prev {
+  color: white;
+  bottom: 4px;
+  left: 10px;
+  top: unset;
+
+  &:after {
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
+
+swiper > .swiper.s-wrapper .swiper-button-next {
+  color: white;
+  bottom: 4px;
+  left: 30px;
+  top: unset;
+
+  &:after {
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullets-dynamic {
+  left: 0;
+  bottom: -10px;
+}
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 3px !important;
+  background-color: white !important;
+  opacity: .5;
+  transition: ease all .3s;
+  border: none !important;
+  &.swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  :host ::ng-deep {
+    swiper > .swiper.s-wrapper {
+      width: 100%;
+    }
+  }
+}

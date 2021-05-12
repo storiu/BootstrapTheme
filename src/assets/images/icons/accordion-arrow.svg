@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>F8DE049B-D56D-403C-8037-C6B4EFE24633</title>
+    <g id="Excavation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SitePlan/excavation/walkways" transform="translate(-1064.000000, -445.000000)">
+            <g id="accordion/closed" transform="translate(136.000000, 426.000000)">
+                <g id="accordionClosed" transform="translate(928.000000, 19.000000)">
+                    <g id="circle/green" fill="#07A39D">
+                        <circle id="Oval" cx="13" cy="13" r="13"></circle>
+                    </g>
+                    <g id="icon/arrow/light" transform="translate(13.000000, 12.000000) rotate(-270.000000) translate(-13.000000, -12.000000) translate(8.000000, 7.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline id="Rectangle-Copy-11" transform="translate(5.000000, 5.000000) rotate(-45.000000) translate(-5.000000, -5.000000) " points="8 2 8 8 2 8"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

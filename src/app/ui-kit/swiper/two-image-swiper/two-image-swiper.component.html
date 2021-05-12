@@ -1,0 +1,14 @@
+<div class="image-slider overflow-hidden w-100">
+  <swiper [config]="config" class="w-100">
+    <div class="bg-white pt-0 pb-60 mx-0 row px-10" *ngFor="let item of images">
+      <div class="col-12 col-md-6 px-0">
+        <img class="img-fluid before-img w-100" [src]="item.before" alt="Before">
+        <span class="bg-warning position-absolute before-tag text-white px-30 py-10">Before</span>
+      </div>
+      <div class="col-12 col-md-6 px-0">
+        <img class="img-fluid after-img w-100" [src]="item.after" alt="After">
+        <span class="bg-warning position-absolute after-tag text-white px-30 py-10">After</span>
+      </div>
+    </div>
+  </swiper>
+</div>

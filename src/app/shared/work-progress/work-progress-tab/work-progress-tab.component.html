@@ -1,0 +1,24 @@
+<section class="position-relative">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="mb-50 pt-50 pt-lg-100" [innerHTML]="data.header"></div>
+        <div class="pl-0 pl-lg-40" [innerHTML]="data.content"></div>
+        <div [innerHTML]="data.hint" *ngIf="data.hint"></div>
+      </div>
+    </div>
+    <div class="carousel-area mr-0 mr-lg-n15 pb-50 py-lg-0">
+      <div class="w-100">
+        <div class="dot-shape position-absolute d-none d-lg-block"><img src="assets/images/shapes/yellow-3-8-dots.svg" alt="Dot"></div>
+        <swiper [config]="config">
+          <div *ngFor="let image of data.images">
+            <div class="box-shadow position-absolute"></div>
+            <div class="img-wrapper ml-10">
+              <img class="w-100" defaultImage="assets/images/placeholder.png" [lazyLoad]="image.src" [alt]="image.alt" loading="lazy">
+            </div>
+          </div>
+        </swiper>
+      </div>
+    </div>
+  </div>
+</section>

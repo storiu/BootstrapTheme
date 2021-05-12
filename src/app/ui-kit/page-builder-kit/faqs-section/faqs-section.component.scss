@@ -1,0 +1,16 @@
+@import "../../../../assets/theme";
+
+.faqs-area {
+  top: 20px;
+}
+
+p.active {
+  color: $downriver;
+  font-weight: 500;
+}
+
+:host ::ng-deep {
+  a:hover {
+    text-decoration: none !important;
+  }
+}

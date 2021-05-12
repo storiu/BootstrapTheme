@@ -1,0 +1,5 @@
+<section class="d-flex bg-white py-10 px-5" [style.width.px]="width">
+  <div class="add-button d-flex justify-content-center cursor-pointer user-select-none" (click)="addValue(-step)"><span class="color-cape-cod font-weight-medium">-</span></div>
+  <input class="font-weight-medium color-cape-cod text-center w-100 h-100 p-0" [min]="min" [type]="type" [(ngModel)]="value" (ngModelChange)="change($event)" [readonly]="readonly">
+  <div class="add-button d-flex justify-content-center cursor-pointer user-select-none" (click)="addValue(step)"><span class="color-cape-cod font-weight-medium">+</span></div>
+</section>

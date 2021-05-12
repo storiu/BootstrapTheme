@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="27px" viewBox="0 0 26 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>closeTab</title>
+    <g id="Faqs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FAQs-sample" transform="translate(-1263.000000, -481.000000)">
+            <g id="closeTab" transform="translate(1276.000000, 494.500000) rotate(-180.000000) translate(-1276.000000, -494.500000) translate(1263.000000, 481.000000)">
+                <g id="Oval" fill="#07A39D">
+                    <circle cx="13" cy="13" r="13"></circle>
+                </g>
+                <g id="Group" transform="translate(1.000000, 3.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                    <g id="icon/arrow/light" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) ">
+                        <polyline id="Rectangle-Copy-11" transform="translate(12.000000, 12.000000) rotate(-45.000000) translate(-12.000000, -12.000000) " points="15 9 15 15 9 15"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

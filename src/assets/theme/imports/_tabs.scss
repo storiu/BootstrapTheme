@@ -1,0 +1,23 @@
+.nav.nav-tabs {
+  .nav-item {
+    padding: 0 30px;
+    .nav-link {
+      border: none;
+      border-bottom: 2px solid white;
+      padding: 5px 0;
+      color: $dove-gray;
+      &.active {
+        color: $niagara;
+      }
+    }
+    .white-nav-link {
+      border: none;
+      border-bottom: 2px solid white;
+      padding: 5px 0;
+      color: white;
+      &.active {
+        color: $niagara;
+      }
+    }
+  }
+}

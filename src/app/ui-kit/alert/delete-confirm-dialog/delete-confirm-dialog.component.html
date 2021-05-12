@@ -1,0 +1,7 @@
+<a class="close" [mat-dialog-close]="false"><span class="material-icons">close</span></a>
+<div [innerHTML]="title | safeHtml"></div>
+<div [innerHTML]="content | safeHtml"></div>
+<div class="d-flex flex-column flex-lg-row justify-content-center" mat-dialog-actions>
+  <button class="btn btn-warning btn-normal mr-0 mb-10 mr-lg-20 mb-lg-0" [mat-dialog-close]="false">No</button>
+  <button class="btn btn-danger btn-normal" [mat-dialog-close]="true">Yes</button>
+</div>

@@ -1,0 +1,7 @@
+<div class="d-flex justify-content-center" *ngIf="center; else simpleButton">
+  <button class="btn btn-warning btn-normal" (click)="navigate()">{{ label }}</button>
+</div>
+
+<ng-template #simpleButton>
+  <button class="btn btn-warning btn-large" (click)="navigate()">{{ label }}</button>
+</ng-template>

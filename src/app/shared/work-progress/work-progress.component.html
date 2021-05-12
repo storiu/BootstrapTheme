@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <a class="btn font-weight-medium font-15" [class.btn-primary]="tab === WorkProgress.TellUsProject" (click)="tab = WorkProgress.TellUsProject">Tell us about your project</a>
+    </div>
+    <div class="col-12 col-lg-4">
+      <a class="btn font-weight-medium font-15" [class.btn-primary]="tab === WorkProgress.HelpPlanIt" (click)="tab = WorkProgress.HelpPlanIt">We help you plan it</a>
+    </div>
+    <div class="col-12 col-lg-4">
+      <a class="btn font-weight-medium font-15" [class.btn-primary]="tab === WorkProgress.RelaxAndReview" (click)="tab = WorkProgress.RelaxAndReview">Relax and review</a>
+    </div>
+  </div>
+
+  <ng-container [ngSwitch]="tab">
+    <archincer-work-progress-tab *ngSwitchCase="WorkProgress.TellUsProject" [data]="tellUsTab"></archincer-work-progress-tab>
+    <archincer-work-progress-tab *ngSwitchCase="WorkProgress.HelpPlanIt" [data]="helpPlanTab"></archincer-work-progress-tab>
+    <archincer-work-progress-tab *ngSwitchCase="WorkProgress.RelaxAndReview" [data]="reviewTab"></archincer-work-progress-tab>
+  </ng-container>
+</div>

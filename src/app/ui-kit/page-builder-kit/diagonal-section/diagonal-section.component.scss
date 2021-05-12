@@ -1,0 +1,12 @@
+img {
+  margin: -1px 0;
+}
+
+.triangle {
+  z-index: 2;
+  width: 100%;
+  bottom: 0;
+  border-top: 14vw solid transparent;
+  border-bottom: 0 solid transparent;
+  border-right: 100vw solid white;
+}

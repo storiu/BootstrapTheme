@@ -1,0 +1,72 @@
+<form [formGroup]="form">
+  <ng-container formArrayName="projects" *ngFor="let project of projects.controls; let i = index">
+
+    <div *ngIf="expanded !== i"
+         class="d-flex justify-content-between align-items-center py-15 pl-20 pr-10 bg-primary text-white rounded cursor-pointer mb-40"
+         [class.bg-primary]="projects.controls[i].valid"
+         [class.bg-dark]="projects.controls[i].invalid"
+         (click)="expanded = i">
+      <span class="font-weight-bold">#{{ i + 1 }} - {{ projects.controls[i].value.name }} {{ projects.controls[i].invalid ? '( Not completed )' : '' }}</span>
+      <archincer-icon color="white" icon="arrow-down"></archincer-icon>
+    </div>
+
+    <ng-container *ngIf="expanded === i" [formGroupName]="i">
+      <archincer-text-input id="{{prefix}}_name" maxLength="50" label="Choose a name of your project" placeholder="Small Patio/ Patio With A Walkway" formControlName="name"></archincer-text-input>
+      <archincer-address-auto-complete-input id="{{prefix}}_address" label="What is the address of your project?" formControlName="address" (latLngChanged)="addressChanged($event, project)"></archincer-address-auto-complete-input>
+      <archincer-select id="{{prefix}}_projectType" label="Project Type" formControlName="projectType" [options]="projectAccessoryTypes"></archincer-select>
+      <archincer-select id="{{prefix}}_locationType" label="Project location on property" formControlName="locationType" [options]="projectLocationTypes"></archincer-select>
+      <div class="input-with-tooltip">
+        <archincer-text-input id="{{prefix}}_projectSize" label="Approx size of project (Square footage)" formControlName="projectSize"></archincer-text-input>
+        <archincer-information-tooltip class="normal-text" content="Enter the approximate square footage of your project. If unknown, enter the approximate length and width of the project. Don't worry, your project consultant will help you determine this in more detail."></archincer-information-tooltip>
+      </div>
+      <div class="input-with-tooltip">
+        <archincer-select id="{{prefix}}_shapeType" label="Shape" formControlName="shapeType" [options]="projectShapeTypes"></archincer-select>
+        <archincer-information-tooltip content="Will your project have straight corners, rounded corners or free-form(meaning a constant flow of curves)?"></archincer-information-tooltip>
+      </div>
+
+      <p class="color-dove-gray mt-40 mb-25" id="{{prefix}}_accessories">
+        Select what will be included in your hardscaping project
+        <archincer-information-tooltip class="ml-5" content="In addition to your core project what other accessories are you interested in?"></archincer-information-tooltip>
+      </p>
+
+      <archincer-image-card-selector [options]="accessoryTypes" formControlName="accessories"></archincer-image-card-selector>
+
+      <div class="row mt-35">
+        <div class="input-with-tooltip col-12 col-md-6">
+          <archincer-select id="{{prefix}}_machineAccess" label="Machine access" formControlName="machineAccess" [options]="machineAccessTypes"></archincer-select>
+          <archincer-information-tooltip content="Is there at least an 8' entrance to where the project is being built? If not, taking down a fence post or moving shrubs are options."></archincer-information-tooltip>
+        </div>
+        <div class="input-with-tooltip col-12 col-md-6">
+          <archincer-select id="{{prefix}}_propertyGrade" label="Property grade" formControlName="propertyGrade" [options]="propertyGradeTypes"></archincer-select>
+          <archincer-information-tooltip content="How level is the area where the project is being built?"></archincer-information-tooltip>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-with-tooltip col-12 col-md-6">
+          <archincer-select id="{{prefix}}_soilType" label="Soil type" formControlName="soilType" [options]="soilTypes"></archincer-select>
+          <archincer-information-tooltip content="What type of soil do you have on your property? If you don't know, your project consultation can look it up for you."></archincer-information-tooltip>
+        </div>
+        <div class="input-with-tooltip col-12 col-md-6">
+          <archincer-select id="{{prefix}}_drainageType" label="Drainage" formControlName="drainageType" [options]="drainageTypes"></archincer-select>
+          <archincer-information-tooltip content="After it rains, does the desired project area retain water for more than 24 hours or does it dry up?"></archincer-information-tooltip>
+        </div>
+      </div>
+
+      <archincer-select id="{{prefix}}_timelineType" label="What is the timeline for the project?" formControlName="timelineType" [options]="projectTimelineTypes"></archincer-select>
+      <div class="input-with-tooltip">
+        <archincer-text-input type="number" min="1" label="Aprox project budget?" formControlName="budget"></archincer-text-input>
+        <archincer-information-tooltip content="Do you have a budget in mind? In order to design the perfect project for your yard and budget it's good to have an idea of what you want to spend, this helps our project consultants design a project around what's affordable for you and your family."></archincer-information-tooltip>
+      </div>
+
+      <h5 class="color-mine-shaft mb-25 mt-40">Attachments</h5>
+      <p class="color-dove-gray mb-30">Upload a photo(s) of area or feel free to upload examples you like.</p>
+
+      <div class="mb-20">
+        <archincer-photo-uploader formControlName="attachments"></archincer-photo-uploader>
+      </div>
+
+      <archincer-textarea placeholder="Comment" rows="6" formControlName="comment"></archincer-textarea>
+    </ng-container>
+  </ng-container>
+</form>

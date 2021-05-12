@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="296px" height="282px" viewBox="0 0 296 282" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="53.1775841%" y2="51.9118089%" id="linearGradient-1">
+            <stop stop-color="#07A39D" offset="0%"></stop>
+            <stop stop-color="#07A39D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Blog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.249860491">
+        <path d="M129.5,0 C221.455411,0 296,74.5445892 296,166.5 C296,258.455411 221.455411,333 129.5,333 C37.5445892,333 -37,258.455411 -37,166.5 C-37,74.5445892 37.5445892,0 129.5,0 Z M128.792893,85.5 C84.0578285,85.5 47.7928932,121.764935 47.7928932,166.5 C47.7928932,211.235065 84.0578285,247.5 128.792893,247.5 C173.527958,247.5 209.792893,211.235065 209.792893,166.5 C209.792893,121.764935 173.527958,85.5 128.792893,85.5 Z" id="Combined-Shape" fill="url(#linearGradient-1)" transform="translate(129.500000, 166.500000) rotate(-315.000000) translate(-129.500000, -166.500000) "></path>
+    </g>
+</svg>

@@ -1,0 +1,8 @@
+<span class="cursor-pointer" [placement]="placement" [ngbPopover]="popContent" [class.hide-anchor]="hideAnchor" [class.hide-border]="hideBorder" triggers="mouseenter:mouseleave">
+  <img src="assets/images/icons/tooltip.svg" [style.width.px]="size" alt="Help">
+</span>
+
+<ng-template #popContent>
+  <div class="font-12 color-mine-shaft text-center" *ngIf="content" [style.width]="width">{{ content }}</div>
+  <div [innerHTML]="htmlContent" *ngIf="htmlContent" [style.width]="width"></div>
+</ng-template>

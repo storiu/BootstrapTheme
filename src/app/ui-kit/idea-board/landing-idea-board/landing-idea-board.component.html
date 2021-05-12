@@ -1,0 +1,33 @@
+<section class="pt-50" [class.mt-lg-10]="title">
+  <div class="container d-flex flex-column align-items-center">
+    <ng-container *ngIf="!headerText else hasHeaderText;">
+      <h3 class="color-downriver mb-30" *ngIf="title">{{ title }}</h3>
+      <p class="color-cape-cod text-center mb-30">Check out our Hardscape idea board, this section is filled with 1000’s of photos of projects we have completed and allows you to “click and save” the photos you like the best so that when you're ready to request an estimate we already have an idea of what you have in mind. If you have an account with us already please sign in, if not please create an account.</p>
+    </ng-container>
+    <ng-template #hasHeaderText>
+      <div [innerHTML]="headerText | safeHtml"></div>
+    </ng-template>
+    <ng-container *ngIf="ideaBoardCategories else selectForm;">
+      <div class="mb-50">
+        <archincer-tabset [tabs]="ideaBoardCategories" isWhiteTab="true" (selectedChange)="categoryChanged($event)"></archincer-tabset>
+      </div>
+    </ng-container>
+    <ng-template #selectForm>
+      <div class="mb-20">
+        <form class="min-width-300" [formGroup]="form">
+          <archincer-idea-category-card-selector class="d-none d-xl-block mt-30" formControlName="projectType"></archincer-idea-category-card-selector>
+          <archincer-select class="d-block d-xl-none" [options]="availableProjectAccessoryTypes" label="Project Type" formControlName="projectType"></archincer-select>
+        </form>
+      </div>
+      <hr class="w-100 mb-40">
+    </ng-template>
+    <archincer-home-page-idea-board class="w-100" [col]="3" [ideas]="ideas" [isLoading]="isLoading"></archincer-home-page-idea-board>
+    <div class="d-flex justify-content-center mb-25 mt-50" *ngIf="ideas.length >= MaxIdeaCount">
+      <a class="text-warning cursor-pointer" [routerLink]="[uhLandingRoutes.landingPages.requestEstimate.root] | routeToAbsolute" ngxScrollTo="root">Want to see more images?</a>
+    </div>
+    <div class="d-flex justify-content-center mb-100" [class.mt-50]="ideas.length < MaxIdeaCount">
+      <button class="btn btn-normal btn-primary mr-20" (click)="loadMore()" *ngIf="ideas.length < MaxIdeaCount">See More</button>
+      <archincer-request-estimate-button [label]="estimateLabel"></archincer-request-estimate-button>
+    </div>
+  </div>
+</section>

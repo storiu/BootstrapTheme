@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="167px" height="282px" viewBox="0 0 167 282" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>D7D0A444-AE90-4290-BC14-1A848E34C390</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="53.1775841%" y2="51.9118089%" id="linearGradient-1">
+            <stop stop-color="#07A39D" offset="0%"></stop>
+            <stop stop-color="#07A39D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.249860491">
+        <g transform="translate(0.000000, -5976.000000)" fill="url(#linearGradient-1)" id="Combined-Shape">
+            <path d="M0.5,5976 C92.4554108,5976 167,6050.54459 167,6142.5 C167,6234.45541 92.4554108,6309 0.5,6309 C-91.4554108,6309 -166,6234.45541 -166,6142.5 C-166,6050.54459 -91.4554108,5976 0.5,5976 Z M-0.207106781,6061.5 C-44.9421715,6061.5 -81.2071068,6097.76494 -81.2071068,6142.5 C-81.2071068,6187.23506 -44.9421715,6223.5 -0.207106781,6223.5 C44.527958,6223.5 80.7928932,6187.23506 80.7928932,6142.5 C80.7928932,6097.76494 44.527958,6061.5 -0.207106781,6061.5 Z" transform="translate(0.500000, 6142.500000) rotate(-315.000000) translate(-0.500000, -6142.500000) "></path>
+        </g>
+    </g>
+</svg>

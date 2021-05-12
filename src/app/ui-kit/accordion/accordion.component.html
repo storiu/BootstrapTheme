@@ -1,0 +1,9 @@
+<section class="position-relative px-20 py-15">
+  <div class="position-absolute icon" (click)="closeTab()">
+    <img src="assets/images/icons/{{ status | lowercase }}-tab.svg" alt="Close">
+  </div>
+  <div class="title" (click)="closeTab()">
+    <h4 class="text-primary">{{ name }}</h4>
+  </div>
+  <div class="description" [class.content-open]="status === AccordionStatus.Open" [innerHTML]="content | safeHtml"></div>
+</section>

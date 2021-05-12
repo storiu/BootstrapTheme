@@ -1,0 +1,27 @@
+.btn.btn {
+  &-primary {
+    color: white;
+    background-color: $niagara;
+    //background: linear-gradient(45deg, $niagara 0%, $java 100%);
+  }
+  &-warning {
+    color: white;
+    background: linear-gradient(45deg, $tangerine 0%, $casablanca 100%);
+  }
+}
+
+.btn-normal {
+  min-width: 120px;
+}
+
+.btn-large {
+  min-width: 180px;
+}
+
+@include media-breakpoint-down(sm) {
+  .btn {
+    &.btn-lt-md-block {
+      width: 100%;
+    }
+  }
+}

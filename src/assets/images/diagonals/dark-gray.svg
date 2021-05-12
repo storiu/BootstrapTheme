@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="199px" viewBox="0 0 1440 199" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>dark-gray</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dark-gray" transform="translate(0.000000, -0.000000)">
+            <path d="M1440,0 L1440,199 L0,199 L0,197.317559 L1440,0 Z" id="topDiagonal-darkBlue" fill="#0A2540" transform="translate(720.000000, 99.500000) rotate(-180.000000) translate(-720.000000, -99.500000) "></path>
+            <path d="M1440,0 L1440,1.77001728 L0,199 L0,0 L1440,0 Z" id="bottomDiagonal-gray" fill="#F3F7FB" transform="translate(720.000000, 99.500000) rotate(-180.000000) translate(-720.000000, -99.500000) "></path>
+        </g>
+    </g>
+</svg>

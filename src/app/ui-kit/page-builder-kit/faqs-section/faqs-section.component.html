@@ -1,0 +1,38 @@
+<section class="position-relative">
+  <div class="container mt-50">
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <div class="position-sticky faqs-area">
+          <div class="mb-30">
+            <archincer-search-input (search)="scrollTo($event, true)"></archincer-search-input>
+          </div>
+          <div class="mb-30 d-lg-block d-none">
+            <p class="font-14 cursor-pointer user-select-none color-gray-chateau text-overflow" *ngFor="let category of faqs"
+               [class.active]="category.id === selectedCategoryId" (click)="scrollTo(category.id)">{{ category.id | optionLabel }}</p>
+          </div>
+          <div class="d-lg-none d-block">
+            <form class="w-100">
+              <archincer-select [options]="faqOptions" label="Categories" [(ngModel)]="selectedCategoryId" (ngModelChange)="scrollTo($event)" [ngModelOptions]="{standalone: true}"></archincer-select>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-9">
+        <div class="row">
+          <div class="col-12" *ngIf="title">
+            <h4 class="text-primary">{{ title }}</h4>
+          </div>
+          <div *ngFor="let category of faqs">
+            <div [id]="category.id">
+              <archincer-section-builder title="{{ category.id | optionLabel }}" sectionClass="pt-10" titleClass="mb-20" align="left">
+                <div class="mb-15" *ngFor="let description of category.descriptions">
+                  <archincer-accordion [name]="description.name" [content]="description.content"></archincer-accordion>
+                </div>
+              </archincer-section-builder>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

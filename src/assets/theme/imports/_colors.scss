@@ -1,0 +1,55 @@
+@mixin colors($property) {
+  &-fern {
+    #{$property}: $fern;
+  }
+  &-downriver {
+    #{$property}: $downriver;
+  }
+  &-gray-chateau {
+    #{$property}: $gray-chateau;
+  }
+  &-nobel {
+    #{$property}: $nobel;
+  }
+  &-cinder {
+    #{$property}: $cinder;
+  }
+  &-cape-cod {
+    #{$property}: $cape-cod;
+  }
+  &-black-squeeze {
+    #{$property}: $black-squeeze;
+  }
+  &-mercury {
+    #{$property}: $mercury;
+  }
+  &-dark-blue {
+    #{$property}: $dark-blue;
+  }
+  &-swans-down {
+    #{$property}: $swans-down;
+  }
+  &-dove-gray {
+    #{$property}: $dove-gray;
+  }
+  &-mystic {
+    #{$property}: $mystic;
+  }
+  &-mine-shaft {
+    #{$property}: $mine-shaft;
+  }
+  &-cloud-burst {
+    #{$property}: $cloud-burst;
+  }
+  &-nightmares {
+    #{$property}: $nightmares;
+  }
+}
+
+.color {
+  @include colors(color);
+}
+
+.bg-color {
+  @include colors(background-color);
+}

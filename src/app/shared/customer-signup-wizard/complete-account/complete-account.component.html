@@ -1,0 +1,18 @@
+<form [formGroup]="form">
+  <ng-container formGroupName="user">
+    <archincer-text-input id="{{prefix}}_user_firstName" label="First Name" formControlName="firstName"></archincer-text-input>
+    <archincer-text-input id="{{prefix}}_user_lastName" label="Last Name" formControlName="lastName"></archincer-text-input>
+    <archincer-text-input id="{{prefix}}_user_email" type="email" label="Email" formControlName="email"></archincer-text-input>
+    <archincer-phone-number-input id="{{prefix}}_user_phone" label="Phone" formControlName="phone"></archincer-phone-number-input>
+    <archincer-text-input id="{{prefix}}_user_password" type="password" label="Create Password" formControlName="password"></archincer-text-input>
+    <archincer-text-input id="{{prefix}}_user_confirmPassword" type="password" label="Confirm Password" formControlName="confirmPassword"></archincer-text-input>
+  </ng-container>
+  <archincer-select id="{{prefix}}_sourceFoundUs" [options]="sourceFoundUsOptions" label="How did you find our company?" formControlName="sourceFoundUs"></archincer-select>
+  <div class="mt-35 text-left">
+    <mat-checkbox class="color-dove-gray" formControlName="terms">
+      <span class="d-flex flex-wrap">
+        I agree to the&nbsp;<a class="text-primary" (click)="showLegalNoticeDialog($event)">Terms of Service</a>&nbsp;and&nbsp;<a class="text-primary" (click)="showPrivacyDialog($event)">Privacy Policy</a>
+      </span>
+    </mat-checkbox>
+  </div>
+</form>

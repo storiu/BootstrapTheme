@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="225px" height="282px" viewBox="0 0 225 282" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>B3A45D7D-5AD4-4B30-A7A6-F47B7A80402E</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="53.1775841%" y2="51.9118089%" id="linearGradient-1">
+            <stop stop-color="#07A39D" offset="0%"></stop>
+            <stop stop-color="#07A39D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Coming-Soon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.146600632">
+        <g id="ComingSoon/desktop" transform="translate(0.000000, -298.000000)" fill="url(#linearGradient-1)">
+            <path d="M58.5,298 C150.455411,298 225,372.544589 225,464.5 C225,556.455411 150.455411,631 58.5,631 C-33.4554108,631 -108,556.455411 -108,464.5 C-108,372.544589 -33.4554108,298 58.5,298 Z M57.7928932,383.5 C13.0578285,383.5 -23.2071068,419.764935 -23.2071068,464.5 C-23.2071068,509.235065 13.0578285,545.5 57.7928932,545.5 C102.527958,545.5 138.792893,509.235065 138.792893,464.5 C138.792893,419.764935 102.527958,383.5 57.7928932,383.5 Z" id="Combined-Shape" transform="translate(58.500000, 464.500000) rotate(-315.000000) translate(-58.500000, -464.500000) "></path>
+        </g>
+    </g>
+</svg>

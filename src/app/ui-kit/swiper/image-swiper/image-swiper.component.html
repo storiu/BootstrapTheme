@@ -1,0 +1,7 @@
+<div class="image-slider overflow-hidden">
+  <swiper [config]="config">
+    <div class="bg-white pt-0 pb-60 px-0" *ngFor="let item of images">
+      <img class="img-fluid rounded" [src]="item" alt="Slider">
+    </div>
+  </swiper>
+</div>

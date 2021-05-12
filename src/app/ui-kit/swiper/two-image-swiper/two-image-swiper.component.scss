@@ -1,0 +1,93 @@
+@import "../../../../assets/theme";
+
+.image-slider {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+:host ::ng-deep {
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: $niagara !important;
+    opacity: .6;
+    transition: ease all .3s;
+    border: none !important;
+    &.swiper-pagination-bullet-active {
+      width: 16px;
+      height: 16px;
+      opacity: 1;
+    }
+  }
+
+  swiper>.swiper.s-wrapper .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  swiper>.swiper.s-wrapper .swiper-pagination .swiper-pagination-handle {
+    display: flex;
+    align-items: center;
+  }
+
+  .swiper-slide {
+    background-color: transparent !important;
+  }
+}
+
+swiper::ng-deep {
+  & > .swiper.s-wrapper .swiper-button-prev  {
+    color: $niagara !important;
+
+    &:after {
+      font-size: 20px;
+    }
+  }
+
+  & > .swiper.s-wrapper .swiper-button-next {
+    left: 30px !important;
+    color: $niagara !important;
+
+    &:after {
+      font-size: 20px;
+    }
+  }
+}
+
+.before-img {
+  border-radius: 6px 0 0 6px;
+}
+
+.after-img {
+  border-radius: 0 6px 6px 0;
+}
+
+.before-tag {
+  border-radius: 6px 0 6px 0;
+  top: 0;
+  left: 0;
+}
+
+.after-tag {
+  border-radius: 0 6px 0 6px;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .before-img {
+    border-radius: 6px 6px 0 0;
+  }
+
+  .after-img {
+    border-radius: 0 0 6px 6px;
+  }
+
+  .after-tag {
+    border-radius: 6px 0 6px 0;
+    top: unset;
+    bottom: 0;
+    right: 0;
+  }
+}
